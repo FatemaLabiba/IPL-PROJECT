@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="chatgtp.css">
+</head>
+<body>
+
+<!--navbar-->
+<div class="navbar">
+  <div class="logo"><img src="logo.png" style="height: 70px;"></div>
+  <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+  <div class="nav-links">
+    <div class="dropdown">
+       <button class="dropbtn" onclick="toggleDropdown(event)">Browse</button>
+      <div class="dropdown-content">
+          <div class="row">
+              <div class="column" style="background-color: white;">
+                  <a href="browse/Romance Stories.html" >Romance</a>
+                  <a href="browse/Historical Fiction Stories.html">HistoricalFiction</a>
+                  <a href="browse/Science Fiction Stories.html">Science Fiction</a>
+                  <a href="browse/Short Stories.html">Short Story</a>
+              </div>
+              <div class="column" style="background-color: white;">    
+                  <a href="browse/Horror Stories.html">Horror</a>
+                  <a href="browse/Poetry Stories.html">Poetry</a>
+                  <a href="browse/Thriller Stories.html">Thriller</a>
+           
+              </div>
+          </div>    
+      </div>
+  </div>  
+    <div class="search-bar">
+      <input type="text" placeholder="Search">
+      <button>Search</button>
+    </div>
+    <div class="auth-buttons">
+      <button class="login" onclick="window.location.href='login/login.html'">Login</button>
+<button class="signup" onclick="window.location.href='signup/signup.html'">Sign Up</button>
+    </div>
+  </div>
+</div>
+<hr>
+
+<!--front page-->
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-text">
+      <h1>Welcome to Onneshon</h1>
+      <p>Your ultimate destination for discovering and sharing knowledge through books and PDFs.
+        With a growing community of passionate readers, writers, and learners, Onneshon empowers you to explore, create, and connect through a vast library of resources. Whether you're diving into a classic, exploring academic works, or sharing your own insights, Onneshon is here to inspire curiosity and foster a love for learning.</p>
+      <button onclick="window.location.href='signup/signup.html'">Get Started</button>
+  </div>
+</section>
+<!--work-->
+<section class="how-we-work">
+  <h2 class="title">How Onneshon Work</h2>
+  <p class="description">
+    Our simple three-step process ensures that you achieve your goals seamlessly.
+  </p>
+
+  <div class="steps-container">
+    <div class="step">
+      <h3><span>1:</span> Discover</h3>
+      <p>We explore your needs and gather all the necessary information to create the perfect solution.</p>
+    </div>
+    <div class="step">
+      <h3><span>2:</span> Plan</h3>
+      <p>We develop a clear and actionable plan to achieve your goals efficiently.</p>
+    </div>
+    <div class="step">
+      <h3><span>3:</span> Deliver</h3>
+      <p>We execute the plan and deliver results that exceed your expectations.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Books Section -->
+<section class="featured-books">
+  <h2 style="margin-top: 60px;">Discover Your Next Favorite Book</h2>
+  <p class="description">
+    Explore a curated collection of captivating stories and inspiring reads. Find your next adventure among our featured books.
+  </p>
+<div class="slider">
+  <div class="slider-track">
+    <div class="slide">
+      <a href="books/akaserupareakas.pdf" target="_blank">
+        <img src="akseruporeakas.jpg" alt="Image 1">
+      </a>
+    </div>
+    <div class="slide">
+      <a href="books/belafurabarage.pdf" target="_blank">
+        <img src="belafurabarage.jpg" alt="Image 2">
+      </a>
+    </div>
+    <div class="slide">
+      <a href="books/Asman.pdf" target="_blank">
+        <img src="asman.jpg" alt="Image 3">
+      </a>
+    </div>
+    <div class="slide">
+      <a href="books/The-Alchemist-Paulo-Coelho.pdf" target="_blank">
+        <img src="thealchemist.jpg" alt="Image 3">
+      </a>
+    </div>
+  </div>
+  <button class="slider-btn left" onclick="moveSlide(-1)">&#10094;</button>
+  <button class="slider-btn right" onclick="moveSlide(1)">&#10095;</button>
+  <div class="dots">
+    <span class="dot" onclick="goToSlide(0)"></span>
+    <span class="dot" onclick="goToSlide(1)"></span>
+    <span class="dot" onclick="goToSlide(2)"></span>
+    <span class="dot" onclick="goToSlide(3)"></span>
+  </div>
+</div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+  <div class="footer-container">
+    <!-- About Column -->
+    <div class="footer-column">
+      <h3>About Us</h3>
+      <p>Discover a world of stories, connect with writers, and find your next favorite book.</p>
+    </div>
+
+    <!-- Links Column -->
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">Library</a></li>
+      </ul>
+    </div>
+
+    <!-- Support Column -->
+    <div class="footer-column">
+      <h3>Support</h3>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+<script src="chatgtp.js"></script>
+</body>
+</html>
+
